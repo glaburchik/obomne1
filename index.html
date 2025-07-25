@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe-Coder | Глеб</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    <header class="header">
+        <div class="container header-flex">
+            <h1 class="logo">Vibe-Coder</h1>
+            <nav class="nav">
+                <a href="#hero">Главная</a>
+                <div class="nav-dropdown">
+                    <a href="#about" class="dropdown-toggle">Обо мне ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="#about">Кратко</a>
+                        <a href="#story">История</a>
+                        <a href="#education">Образование</a>
+                        <a href="#languages">Языки</a>
+                        <a href="#interests">Интересы</a>
+                        <a href="#goals">Цели</a>
+                        <a href="#achievements">Достижения</a>
+                    </div>
+                </div>
+                <a href="#projects">Проекты</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему"></button>
+        </div>
+    </header>
+    <section class="hero" id="hero">
+        <div class="container hero-flex">
+            <div class="hero-info">
+                <h2 class="hero-title">Привет! Я <span class="vibe">Глеб</span> <span class="alias">(Vibe-Coder)</span></h2>
+                <p class="hero-desc">17 лет, будущий студент <b>LUST</b> (Liaoning University of Science and Technology).<br>Учу английский и китайский, в сентябре уезжаю учиться в Китай и планирую там остаться!</p>
+                <blockquote class="hero-quote">"Код — это мой способ делать мир ярче и удобнее!"</blockquote>
+                <button class="scroll-btn" onclick="scrollToAbout()">Узнать больше ↓</button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <ul class="facts">
+                <li>Vibe-coder (Глеб), 17 лет, живу в Мытищах</li>
+                <li>Закончил МБОУ СОШ6 в Мытищах (2024)</li>
+                <li>Работаю официантом, чтобы быть ближе к людям и учиться коммуникации</li>
+                <li>Самостоятельно изучаю программирование, люблю разбираться в новых технологиях</li>
+                <li>Поступаю в LUST (Liaoning University of Science and Technology), Китай</li>
+                <li>Планирую карьеру в Китае, мечтаю создать свой стартап</li>
+                <li>Люблю креативные задачи, нестандартные решения и юмор</li>
+                <li>Постоянно учусь и совершенствуюсь, не боюсь ошибок</li>
+                <li>Мечтаю путешествовать, изучать языки и культуры мира</li>
+            </ul>
+        </div>
+    </section>
+    <section id="story" class="story">
+        <div class="container">
+            <h2>Моя история</h2>
+            <p>С детства я был любопытным: разбирал игрушки, собирал компьютеры, пытался понять, как устроен интернет. В школе увлекся олимпиадами по информатике, участвовал в хакатонах, но не всегда побеждал — зато всегда учился новому! После школы работал официантом, чтобы научиться общаться с разными людьми и не бояться трудностей. В свободное время писал сайты, ботов, мини-игры, делал проекты для друзей и для себя. Сейчас я готов к новым вызовам и мечтаю реализовать свои идеи в Китае!</p>
+        </div>
+    </section>
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Образование</h2>
+            <ul class="edu-list">
+                <li>МБОУ СОШ6, Мытищи — окончил в 2024 году</li>
+                <li>Поступаю в LUST (Liaoning University of Science and Technology), Китай</li>
+                <li>Самостоятельно прошёл десятки онлайн-курсов по программированию, участвовал в IT-мероприятиях</li>
+                <li>Постоянно учусь на практике: делаю проекты, читаю статьи, смотрю видео на английском и китайском</li>
+            </ul>
+        </div>
+    </section>
+    <section id="languages" class="languages">
+        <div class="container">
+            <h2>Языки</h2>
+            <ul class="lang-list">
+                <li>Русский — родной</li>
+                <li>Английский — B1-B2 (Intermediate), читаю техническую литературу, смотрю сериалы</li>
+                <li>Китайский — начинающий (HSK1+), учу каждый день, мечтаю свободно говорить</li>
+                <li>HTML, CSS, JavaScript, Python — языки, на которых я "разговариваю" с компьютером</li>
+            </ul>
+        </div>
+    </section>
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2>Интересы</h2>
+            <ul class="interest-list">
+                <li>Веб-разработка: люблю делать красивые и удобные сайты</li>
+                <li>Автоматизация: пишу скрипты, чтобы экономить время</li>
+                <li>Боты и AI: создаю Telegram-ботов, интересуюсь искусственным интеллектом</li>
+                <li>Языки и культура: изучаю английский и китайский, люблю узнавать новое о странах</li>
+                <li>Путешествия: мечтаю объехать Азию и Европу</li>
+                <li>Геймификация: делаю мини-игры, чтобы учиться было веселее</li>
+                <li>Современные технологии: слежу за трендами, пробую новые инструменты</li>
+                <li>Фотография и видео: иногда снимаю ролики для себя и друзей</li>
+                <li>Музыка: слушаю всё от lo-fi до китайского рока</li>
+            </ul>
+        </div>
+    </section>
+    <section id="goals" class="goals">
+        <div class="container">
+            <h2>Мои цели</h2>
+            <ul class="goals-list">
+                <li>Поступить и успешно учиться в LUST</li>
+                <li>Достичь уровня HSK4+ по китайскому и свободно говорить</li>
+                <li>Создать востребованный IT-продукт, который поможет людям</li>
+                <li>Построить карьеру в Китае, найти единомышленников</li>
+                <li>Путешествовать, учиться у лучших и делиться знаниями</li>
+                <li>Открыть свой стартап и сделать вклад в развитие технологий</li>
+                <li>Не забывать про спорт, здоровье и близких</li>
+            </ul>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Навыки</h2>
+            <div class="skills-list">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3 / SCSS</div>
+                <div class="skill-card">JavaScript (ES6+)</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Telegram Bots</div>
+                <div class="skill-card">Chrome Extensions</div>
+                <div class="skill-card">Git</div>
+                <div class="skill-card">UI/UX</div>
+                <div class="skill-card">Адаптивная верстка</div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="projects-list">
+                <div class="project-card">
+                    <h3>Расширение для браузера "TabSaver"</h3>
+                    <p>Удобное расширение для сохранения и восстановления вкладок. Позволяет быстро сохранять сессии и делиться ими с друзьями.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Сайт-портфолио для фотографа</h3>
+                    <p>Красивый адаптивный сайт с галереей, анимациями и формой обратной связи.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Telegram-бот "StudyHelper"</h3>
+                    <p>Бот для планирования учебы, напоминаний и автоматизации рутинных задач.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Мини-игра "Color Rush"</h3>
+                    <p>Аркадная игра на JavaScript с динамичной графикой и таблицей рекордов.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Лендинг для онлайн-курса</h3>
+                    <p>Современный лендинг с анимациями, видео и отзывами клиентов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2>Достижения</h2>
+            <ul class="achieve-list">
+                <li>Победитель и призёр школьных олимпиад по информатике и математике</li>
+                <li>Создал более 10 собственных расширений, ботов и мини-игр</li>
+                <li>Участвовал в хакатонах, IT-мероприятиях, командных проектах</li>
+                <li>Сделал сайты для друзей, учителей и местных бизнесов</li>
+                <li>Самостоятельно освоил английский и начал учить китайский</li>
+                <li>Работаю официантом и учусь совмещать работу с саморазвитием</li>
+                <li>Построил портфолио, которым горжусь</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-flex">
+                <div>
+                    <p>Telegram: <a href="https://t.me/vibe_coder" target="_blank">@vibe_coder</a></p>
+                    <p>Email: <a href="mailto:vibe.coder@gmail.com">vibe.coder@gmail.com</a></p>
+                </div>
+                <div>
+                    <p>Город: Москва / Китай</p>
+                    <p>GitHub: <a href="https://github.com/vibe-coder" target="_blank">vibe-coder</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Vibe-Coder (Глеб). Все права защищены.</p>
+        </div>
+    </footer>
+    <!-- Чат-виджет -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" id="chatToggle">Чат</button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">Онлайн-чат <button class="chat-close" id="chatClose" aria-label="Закрыть">×</button></div>
+            <div class="chat-body">
+                <div id="userChatLogin">
+                    <form id="userChatLoginForm">
+                        <input type="text" id="userName" placeholder="Ваше имя" required>
+                        <input type="text" id="userPhone" placeholder="Телефон" required>
+                        <button type="submit">Войти в чат</button>
+                    </form>
+                </div>
+                <div id="userChatMain" style="display:none;">
+                    <div class="user-chat-box" id="userChatBox"></div>
+                    <form id="userChatForm" class="user-chat-form">
+                        <textarea id="userMessage" placeholder="Сообщение" required></textarea>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Модальное окно входа администратора -->
+    <div class="admin-modal" id="adminModal">
+        <div class="admin-modal-content">
+            <h2>Вход администратора</h2>
+            <form id="adminLoginForm">
+                <input type="text" id="adminLogin" placeholder="Логин" autocomplete="username" required>
+                <input type="password" id="adminPassword" placeholder="Пароль" autocomplete="current-password" required>
+                <button type="submit">Войти</button>
+                <div class="admin-error" id="adminError"></div>
+            </form>
+            <button class="admin-close" id="adminClose" aria-label="Закрыть">×</button>
+        </div>
+    </div>
+    <!-- Боковая панель админ-чата -->
+    <div class="admin-sidebar" id="adminSidebar">
+        <div class="admin-sidebar-header">
+            <span>Админ-чат</span>
+            <button class="admin-sidebar-close" id="adminSidebarClose" aria-label="Закрыть">×</button>
+        </div>
+        <div class="admin-sidebar-main">
+            <ul class="admin-user-list" id="adminUserList"></ul>
+            <div class="admin-chat-box" id="adminChatBox"></div>
+        </div>
+        <form id="adminMsgForm" class="admin-msg-form">
+            <textarea id="adminMsgInput" placeholder="Ваше сообщение..." required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <script src="loader.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="user-chat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

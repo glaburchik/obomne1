@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-чат | Vibe-Coder</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-chat-container">
+        <header class="admin-header">
+            <h1>Админ-чат</h1>
+            <button class="admin-logout" id="adminLogout">Выйти</button>
+        </header>
+        <main class="admin-chat-main">
+            <div class="admin-main-flex">
+                <ul class="admin-user-list" id="adminUserList"></ul>
+                <div class="admin-chat-box" id="adminChatBox"></div>
+            </div>
+            <form id="adminMsgForm" class="admin-msg-form">
+                <textarea id="adminMsgInput" placeholder="Ваше сообщение..." required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </main>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="admin-chat.js"></script>
+</body>
+</html> 
